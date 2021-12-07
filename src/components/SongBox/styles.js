@@ -20,12 +20,12 @@ export const SongBox = styled.div`
     }
 `
 
-export const BirdName = styled.h5`
+export const TextName = styled.h5`
     margin: 0 0 .1rem 0;
     font-size: .9rem;
 `
 
-export const BirdLength = styled.small`
+export const TextLength = styled.small`
     font-size: .75rem;
     font-weight: 300;
 `

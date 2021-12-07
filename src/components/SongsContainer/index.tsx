@@ -1,20 +1,22 @@
 import SongBox from '../SongBox'
 import * as S from './styles'
+import { SongContext } from '../../contexts/SongContext'
+import { useContext } from 'react'
 
-interface SongsContainerProps {
-    birds: {
-        name: string,
-        length: string
-    }[]
-}
+const SongsContainer = () => {
+    const {
+        songs
+    } = useContext(SongContext)
 
-const SongsContainer = (props: SongsContainerProps) => {
     return (
         <S.SongsContainer>
-            {props.birds.map(bird => {
+            {songs.map(song => {
                 return (
-                    <SongBox name={bird.name}
-                        length={bird.length} />
+                    <SongBox name={song.name}
+                        length={song.length}
+                        title={song.title}
+                        text={song.text}
+                        videoYoutubeID={song.videoYoutubeID} />
                 )
             })}
         </S.SongsContainer>

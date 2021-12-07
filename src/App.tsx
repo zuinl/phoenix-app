@@ -1,17 +1,17 @@
 import SongsContainer from "./components/SongsContainer"
 import TextBox from "./components/TextBox"
 import VideoBox from "./components/VideoBox"
-import birds from "./utils/birds"
+import { SongContextProvider } from "./contexts/SongContext"
 
 const App = () => {
   return (
-    <div>
-      <SongsContainer birds={birds} />
+      <SongContextProvider>
+        <SongsContainer />
 
-      <VideoBox />
+        <VideoBox />
 
-      <TextBox />
-    </div>
+        <TextBox />
+      </SongContextProvider>
   )
 }
 

@@ -1,13 +1,19 @@
+import { useContext } from 'react'
+import { SongContext } from '../../contexts/SongContext'
 import * as S from './styles'
 
 const TextBox = () => {
+    const {
+        currentSong
+    } = useContext(SongContext)
+
     return (
         <S.TextBox>
             <S.TextTitle>
-                Phoenix
+                {currentSong.title}
             </S.TextTitle>
 
-            <S.Text>Oi</S.Text>
+            <S.Text>{currentSong.text}</S.Text>
         </S.TextBox>
     )
 }
