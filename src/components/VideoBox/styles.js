@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const WingBox = styled.div`
+export const VideoBox = styled.div`
    width: 100%;
    display: flex;
    justify-content: center;

@@ -1,16 +1,16 @@
-import BirdContainer from "./components/BirdContainer"
-import SkyBox from "./components/SkyBox"
-import WingBox from "./components/WingBox"
+import SongsContainer from "./components/SongsContainer"
+import TextBox from "./components/TextBox"
+import VideoBox from "./components/VideoBox"
 import birds from "./utils/birds"
 
 const App = () => {
   return (
     <div>
-      <BirdContainer birds={birds} />
+      <SongsContainer birds={birds} />
 
-      <WingBox />
+      <VideoBox />
 
-      <SkyBox />
+      <TextBox />
     </div>
   )
 }

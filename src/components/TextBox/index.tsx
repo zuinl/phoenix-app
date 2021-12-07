@@ -1,6 +1,6 @@
 import * as S from './styles'
 
-const SkyBox = () => {
+const TextBox = () => {
     return (
         <S.TextBox>
             <S.TextTitle>
@@ -12,4 +12,4 @@ const SkyBox = () => {
     )
 }
 
-export default SkyBox
+export default TextBox

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const BirdBox = styled.div`
+export const SongBox = styled.div`
     background: ${props => props.active ? 'var(--primary-color)' : 'var(--secondary-color)'};
     margin-right: .7rem;
     padding: .5rem;

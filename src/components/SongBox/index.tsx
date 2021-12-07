@@ -1,21 +1,21 @@
 import * as S from './styles'
 
-interface BirdBoxProps {
+interface SongBoxProps {
     name: string,
     length: string
 }
 
-const BirdBox = (props: BirdBoxProps) => {
+const SongBox = (props: SongBoxProps) => {
     return (
-        <S.BirdBox>
+        <S.SongBox>
             <S.BirdName>
                 {props.name}
             </S.BirdName>
             <S.BirdLength>
                 {props.length}
             </S.BirdLength>
-        </S.BirdBox>
+        </S.SongBox>
     )
 }
 
-export default BirdBox
+export default SongBox

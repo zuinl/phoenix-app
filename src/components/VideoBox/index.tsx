@@ -1,8 +1,8 @@
 import * as S from './styles'
 
-const WingBox = () => {
+const VideoBox = () => {
     return (
-        <S.WingBox>
+        <S.VideoBox>
             <iframe
                 width="560" 
                 height="315" 
@@ -12,8 +12,8 @@ const WingBox = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen 
             />
-        </S.WingBox>
+        </S.VideoBox>
     )
 }
 
-export default WingBox
+export default VideoBox
