@@ -42,8 +42,26 @@ const GlobalStyle = createGlobalStyle`
         width: 100vw;
         height: 100vh;
         padding: 0 1rem 1rem 1rem;
-        padding-top: calc(70px + 1rem);
+        padding-top: calc(70px + 2rem);
         overflow-x: hidden;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 6px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--primary-color); 
+        border-radius: 6px;
     }
 `
 

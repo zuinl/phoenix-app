@@ -5,5 +5,5 @@ export const SongsContainer = styled.div`
     width: 100%;
     overflow-x: auto;
     padding-bottom: .3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 `
