@@ -13,7 +13,7 @@ const TextBox = () => {
                 {currentSong.title}
             </S.TextTitle>
 
-            <S.Text>{currentSong.text}</S.Text>
+            <S.Text dangerouslySetInnerHTML={{ __html: currentSong.text }} />
         </S.TextBox>
     )
 }
