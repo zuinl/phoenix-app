@@ -28,11 +28,12 @@ const SongBox = (props: SongBoxProps) => {
 
     return (
         <S.SongBox active={currentSong.name === props.name}
-            onClick={onSongClick}>
+            onClick={onSongClick}
+            data-testid="song-box">
             <S.TextName>
                 {props.name}
             </S.TextName>
-            <S.TextLength>
+            <S.TextLength data-testid="song-length">
                 {props.length}
             </S.TextLength>
         </S.SongBox>

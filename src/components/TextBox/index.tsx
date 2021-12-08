@@ -8,7 +8,7 @@ const TextBox = () => {
     } = useContext(SongContext)
 
     return (
-        <S.TextBox>
+        <S.TextBox data-testid="text-box">
             <S.TextTitle>
                 {currentSong.title}
             </S.TextTitle>

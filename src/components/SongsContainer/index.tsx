@@ -9,7 +9,7 @@ const SongsContainer = () => {
     } = useContext(SongContext)
 
     return (
-        <S.SongsContainer>
+        <S.SongsContainer data-testid="songs-container">
             {songs.map(song => {
                 return (
                     <SongBox  key={song.name}

@@ -10,7 +10,7 @@ const VideoBox = () => {
     } = useContext(SongContext)
 
     return (
-        <S.VideoBox>
+        <S.VideoBox data-testid="video-box">
             <Youtube 
                 videoId={currentSong.videoYoutubeID}
                 opts={{

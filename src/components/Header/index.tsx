@@ -1,10 +1,11 @@
 import * as S from './styles'
 import PhoenixLogo from '../../assets/img/phoenix_app.svg'
+import externalLink from '../../utils/externalLink'
 
 const Header = () => {
     return (
         <S.Header>
-            <a href="https://www.wattpad.com/story/292650827-fênix" 
+            <a href={externalLink} 
                 target="_blank"
                 rel="noreferrer">
                 <img src={PhoenixLogo} alt="Phoenix App" />
