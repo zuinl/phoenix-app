@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         background-color: #B89669;
+        margin: 0;
     }
     
     body, input, textarea, select, button {
