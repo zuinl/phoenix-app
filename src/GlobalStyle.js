@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
     /* width */
     ::-webkit-scrollbar {
         width: 8px;
-        height: 8px;
+        height: 10px;
     }
 
     /* Track */

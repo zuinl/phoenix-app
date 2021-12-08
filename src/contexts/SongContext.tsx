@@ -22,7 +22,8 @@ export const SongContext = createContext({
         title: string,
         text: string,
         videoYoutubeID: string
-    }) => {  }
+    }) => {  },
+    nextSong: () => {  }
 })
 
 interface SongContextProviderProps {
@@ -31,12 +32,21 @@ interface SongContextProviderProps {
 
 export const SongContextProvider = (props: SongContextProviderProps) => {
     const [currentSong, setCurrentSong] = useState(songs[0])
+
+    const nextSong = () => {
+        const currentIndex = songs.findIndex(song => song.name === currentSong.name)
+
+        if(currentIndex === (songs.length - 1)) return
+
+        setCurrentSong(songs[currentIndex + 1])
+    }
     
     return (
         <SongContext.Provider value={{
             songs,
             currentSong,
-            setCurrentSong
+            setCurrentSong,
+            nextSong
         }}>
             {props.children}
         </SongContext.Provider>

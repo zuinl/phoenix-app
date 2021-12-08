@@ -12,7 +12,8 @@ const SongsContainer = () => {
         <S.SongsContainer>
             {songs.map(song => {
                 return (
-                    <SongBox name={song.name}
+                    <SongBox  key={song.name}
+                        name={song.name}
                         length={song.length}
                         title={song.title}
                         text={song.text}

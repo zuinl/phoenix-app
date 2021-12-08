@@ -1,22 +1,26 @@
-import { useContext } from 'react'
+import React, { useContext } from 'react'
 import { SongContext } from '../../contexts/SongContext'
 import * as S from './styles'
+import Youtube from 'react-youtube'
 
 const VideoBox = () => {
     const {
-        currentSong
+        currentSong,
+        nextSong
     } = useContext(SongContext)
 
     return (
         <S.VideoBox>
-            <iframe
-                width="560" 
-                height="315" 
-                src={`https://www.youtube.com/embed/${currentSong.videoYoutubeID}`} 
-                title="YouTube video player" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen 
+            <Youtube 
+                videoId={currentSong.videoYoutubeID}
+                opts={{
+                    width: "500",
+                    height: "315",
+                    playerVars: {
+                        autoplay: 1
+                    }
+                }}
+                onEnd={nextSong}
             />
         </S.VideoBox>
     )
