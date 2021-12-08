@@ -35,6 +35,16 @@ const GlobalStyle = createGlobalStyle`
     input, button, select {
         outline: none;
     }
+
+    .App {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 100vh;
+        padding: 0 1rem 1rem 1rem;
+        padding-top: calc(70px + 1rem);
+        overflow-x: hidden;
+    }
 `
 
 export default GlobalStyle

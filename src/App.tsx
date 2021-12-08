@@ -6,7 +6,7 @@ import { SongContextProvider } from "./contexts/SongContext"
 
 const App = () => {
   return (
-    <>
+    <div className="App">
       <Header />
       
       <SongContextProvider>
@@ -16,7 +16,7 @@ const App = () => {
 
         <TextBox />
       </SongContextProvider>
-    </>
+    </div>
   )
 }
 
