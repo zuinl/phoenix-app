@@ -4,3 +4,5 @@ This is a personal app built to demonstrate my knowledge in *ReactJS and TypeScr
 
 ## Check it out
 You can access the application [here](https://phoenix-app-iota.vercel.app/).
+
+![App Platorm](public/app_screenshot.png)
